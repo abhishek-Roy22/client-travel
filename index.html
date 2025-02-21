@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Travel Agency</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Add these before closing </head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="d-none d-md-block w-100" id="header">
+      <div class="container py-2">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-8">
+            <div class="d-flex flex-wrap gap-4">
+              <!-- <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-phone text-white"></i>
+                <a
+                  href="tel:+91-7633940407"
+                  class="text-white text-decoration-none"
+                  >+91-7633940407</a
+                >
+              </div> -->
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-envelope text-white"></i>
+                <a
+                  href="mailto:subhashtravels01@gmail.com"
+                  class="text-white text-decoration-none"
+                  >subhashtravels01@gmail.com</a
+                >
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-location-dot text-white"></i>
+                <span class="text-white">Patna / Darbhanga / Madhubani</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center gap-2 justify-content-end"
+          >
+            <a href="#">
+              <button class="btn btn-warning">Contact Us</button>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#"
+                ><i class="fa-brands fa-facebook fs-5 text-light"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-x-twitter fs-5 text-light"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-instagram fs-5 text-light"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-whatsapp fs-5 text-light"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-lg"
+      id="my-navigation"
+    >
+      <div class="container internal">
+        <!-- <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" /></a> -->
+        <h1 class="h1 fw-bold text-warning">Tax!</h1>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex align-items-center gap-2 flex-start mx-auto">
+            <i class="fa-solid fa-phone fs-3 text-warning"></i>
+            <div class="content">
+              <p>
+                24/7 CAR RENTAL : <br />
+                <a href="tel:+917982696472"><b>+91-7982696472</b></a>
+              </p>
+            </div>
+          </div>
+          <ul class="navbar-nav d-flex align-items-center gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.php">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.php">About us </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Taxi Service
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">One way Cabs</a></li>
+                <li><a class="dropdown-item" href="#">Outstation Cabs</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Local Cabs</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/rate-chart.php">Rate Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery.php">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Form Section -->
+      <section class="mb-4 bg-warning-subtle">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="booking-container shadow">
+                <h5 class="text-center fw-bold mb-4">
+                  Bihar's First Licensed Taxi Aggregator by Govt. of Bihar.
+                </h5>
+
+                <!-- Tabs for Selection -->
+                <div class="tab-container mb-4">
+                  <button onclick="selectTab(this)" class="tab-btn active">
+                    <i class="fas fa-taxi"></i> Local
+                  </button>
+                  <button onclick="selectTab(this)" class="tab-btn">
+                    <i class="fas fa-bus"></i> Outstation
+                  </button>
+                  <button onclick="selectTab(this)" class="tab-btn">
+                    <i class="fas fa-ambulance"></i> Ambulance
+                  </button>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form">
+                  <p class="text-center mb-4" id="form-title">
+                    Book <strong>Local</strong> City/Town rides all over Bihar.
+                  </p>
+
+                  <div class="location-inputs">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="input-group">
+                        <span class="input-group-text bg-transparent">
+                          <i class="fas fa-circle text-success"></i>
+                          <span class="text-secondary fw-semibold ms-2"
+                            >Start Location</span
+                          >
+                        </span>
+                        <gmpx-api-loader
+                          key="AIzaSyD5WMUaysjka4p_lpzPrV2uBv-g-JI_bYo"
+                          solution-channel="GMP_GE_placepicker_v2"
+                        >
+                        </gmpx-api-loader>
+                        <div id="place-picker-box">
+                          <div id="place-picker-container">
+                            <gmpx-place-picker
+                              placeholder="Start Location (Business or Place)"
+                            ></gmpx-place-picker>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-text bg-transparent">
+                          <i class="fas fa-circle text-danger"></i>
+                          <span class="text-secondary fw-semibold ms-2"
+                            >Drop Location</span
+                          >
+                        </span>
+                        <gmpx-api-loader
+                          key="AIzaSyD5WMUaysjka4p_lpzPrV2uBv-g-JI_bYo"
+                          solution-channel="GMP_GE_placepicker_v2"
+                        >
+                        </gmpx-api-loader>
+                        <div id="place-picker-box">
+                          <div id="place-picker-container">
+                            <gmpx-place-picker
+                              placeholder="Enter Destination (Business or Place)"
+                            ></gmpx-place-picker>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-4">
+                      <!-- <span class="input-group-text bg-transparent">
+                        <i class="far fa-clock"></i>
+                      </span> -->
+                      <input
+                        type="datetime-local"
+                        class="form-control px-2"
+                        value="Now"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <button class="btn btn-warning w-100 py-2 fw-bold">
+                    Continue →
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Add image or content for right side if needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Transparent Billing -->
+            <div class="col-md-4">
+              <div class="feature-card h-100">
+                <h3 class="feature-title">Transparent Billing</h3>
+                <div class="feature-underline"></div>
+                <p class="feature-text">
+                  Enjoy clear and straightforward pricing with no hidden costs
+                  or surprises.
+                </p>
+              </div>
+            </div>
+
+            <!-- On-Time Arrival -->
+            <div class="col-md-4">
+              <div class="feature-card h-100">
+                <h3 class="feature-title">On-Time Arrival</h3>
+                <div class="feature-underline"></div>
+                <p class="feature-text">
+                  Our professional drivers ensure timely pickups & drop-offs,
+                  every time.
+                </p>
+              </div>
+            </div>
+
+            <!-- 24/7 Support -->
+            <div class="col-md-4">
+              <div class="feature-card h-100">
+                <h3 class="feature-title">24/7 Support</h3>
+                <div class="feature-underline"></div>
+                <p class="feature-text">
+                  Reach us anytime with round-the-clock customer service for all
+                  your travel needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Offer Section -->
+      <section class="offer-section my-2">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <img
+                src="./img/offer1.png"
+                alt="offer_img"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./img/offer2.png"
+                alt="offer_img"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./img/offer3.png"
+                alt="offer_img"
+                class="img-fluid rounded shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Section -->
+      <section class="why-section my-5">
+        <div class="container">
+          <h2 class="text-secondary fs-2 fw-semibold text-center" id="heading">
+            Why TaxiMuzaffarpur is Your Best Choice?
+          </h2>
+          <div class="row g-4 mt-3">
+            <div class="col-md-3">
+              <div
+                class="w-100 d-flex flex-column align-items-center shadow-lg p-3 rounded gap-2"
+              >
+                <img src="./img/rupee.png" alt="rupee-icon" class="img-fluid" />
+                <h3 class="h4 fw-bold">Affordable Pricing</h3>
+                <p class="text-secondary text-center">
+                  We offer the best rates starting from ₹11/km with no hidden
+                  charges or surprises.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 d-flex flex-column align-items-center shadow-lg p-3 rounded gap-2"
+              >
+                <img src="./img/24-7.png" alt="rupee-icon" class="img-fluid" />
+                <h3 class="h5 fw-bold">Certified & Trusted Service</h3>
+                <p class="text-secondary text-center">
+                  Our certified service ensures safe, reliable, and high-quality
+                  rides across Bihar.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 d-flex flex-column align-items-center shadow-lg p-3 rounded gap-2"
+              >
+                <img
+                  src="./img/cleaning.png"
+                  alt="rupee-icon"
+                  class="img-fluid"
+                />
+                <h3 class="h4 fw-bold">Clean & Sanitized Cabs</h3>
+                <p class="text-secondary text-center">
+                  All our vehicles are regularly cleaned and sanitized for your
+                  safety and comfort.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 d-flex flex-column align-items-center shadow-lg p-3 rounded gap-2"
+              >
+                <img src="./img/zero.png" alt="rupee-icon" class="img-fluid" />
+                <h3 class="h4 fw-bold">Wide Vehicle Range</h3>
+                <p class="text-secondary text-center">
+                  Choose from hatchbacks, sedans, SUVs, and more to fit all your
+                  travel needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="rent-section my-5">
+        <div class="container">
+          <h2
+            class="text-secondary fs-2 fw-semibold text-center mb-3"
+            id="heading"
+          >
+            Our car rentals & vehicle services
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-2 col-lg-4">
+              <div class="card border-2 border-warning">
+                <img
+                  src="/img/dezire.avif"
+                  class="card-img-top"
+                  alt="Service Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Maruti Suzuki Dzire</h5>
+                  <p
+                    class="card-text d-flex align-items-center justify-content-between my-3"
+                  >
+                    <span>Sedan</span>
+                    <span class="fw-bold text-warning">13/Km</span>
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4">
+              <div class="card border-2 border-warning">
+                <img
+                  src="/img/toyota.avif"
+                  class="card-img-top"
+                  alt="Service Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Toyota Innova</h5>
+                  <p
+                    class="card-text d-flex align-items-center justify-content-between my-3"
+                  >
+                    <span>SUV</span>
+                    <span class="fw-bold text-warning">20/Km</span>
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4">
+              <div class="card border-2 border-warning">
+                <img
+                  src="/img/honda-city.avif"
+                  class="card-img-top"
+                  alt="Service Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Honda City</h5>
+                  <p
+                    class="card-text d-flex align-items-center justify-content-between my-3"
+                  >
+                    <span>Sedan</span>
+                    <span class="fw-bold text-warning">13/Km</span>
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4">
+              <div class="card border-2 border-warning">
+                <img
+                  src="/img/scorpio.avif"
+                  class="card-img-top"
+                  alt="Service Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mahindra Scorpio</h5>
+                  <p
+                    class="card-text d-flex align-items-center justify-content-between my-3"
+                  >
+                    <span>SUV</span>
+                    <span class="fw-bold text-warning">16/Km</span>
+                  </p>
+                  <a href="#" class="btn btn-warning">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Section -->
+      <section class="popular-section my-5">
+        <div class="container d-flex flex-column align-items-center">
+          <h2
+            class="text-secondary fs-2 fw-semibold text-center mb-3"
+            id="heading"
+          >
+            Our Popular Rental Packages
+          </h2>
+          <div class="row g-4 mt-3">
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/patna.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Patna</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/bhagalpur.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Bhagalpur</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/darbhanga.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Darbhanga</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/deoghar.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Deoghar</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/madhubani.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Madhubani</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/muzaffarpur.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Muzaffarpur</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/nalanda.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Nalanda</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
+              >
+                <img
+                  src="/img/rajgir.jpg"
+                  alt="patna-location"
+                  class="img-fluid"
+                />
+                <div
+                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
+                >
+                  <h5 class="fw-bold">Rajgir</h5>
+                  <p>Starting from ₹2400</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Buttons -->
+          <div class="contact-buttons mt-3">
+            <a href="tel:+917982696472" class="contact-btn call-btn">
+              <i class="fas fa-phone"></i>
+              Call Us
+            </a>
+            <span class="divider">OR</span>
+            <a
+              href="https://wa.me/917982696472"
+              class="contact-btn whatsapp-btn"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Whatsapp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Cards Section -->
+      <section class="service-cards py-5">
+        <div class="container">
+          <div class="owl-carousel service-carousel owl-theme">
+            <!-- Hotel Card -->
+            <div class="item">
+              <div class="service-card bg-light rounded-4 p-4 text-center">
+                <h3>Book Cab</h3>
+                <h2 class="fw-bold mb-4">To Hotel!</h2>
+                <a
+                  href="tel:+917982696472"
+                  class="btn btn-warning px-4 py-2 mb-4"
+                  >Call Us Now!</a
+                >
+                <img
+                  src="./img/home1.png"
+                  alt="Hotel"
+                  class="img-fluid service-img"
+                />
+              </div>
+            </div>
+
+            <!-- Taxi Card -->
+            <div class="item">
+              <div class="service-card bg-purple rounded-4 p-4 text-center">
+                <h3>Book your</h3>
+                <h2 class="fw-bold mb-4">Taxi Now!</h2>
+                <a
+                  href="tel:+917982696472"
+                  class="btn btn-warning px-4 py-2 mb-4"
+                  >Call Us Now!</a
+                >
+                <img
+                  src="./img/home2.png"
+                  alt="Taxi"
+                  class="img-fluid service-img"
+                />
+              </div>
+            </div>
+
+            <!-- Airport Transfer Card -->
+            <div class="item">
+              <div class="service-card bg-pink rounded-4 p-4 text-center">
+                <h3>Travel Stress-Free</h3>
+                <h2 class="fw-bold mb-4">Airport Transfer!</h2>
+                <a
+                  href="tel:+917982696472"
+                  class="btn btn-warning px-4 py-2 mb-4"
+                  >Call Us Now!</a
+                >
+                <img
+                  src="./img/home3.png"
+                  alt="Airport Transfer"
+                  class="img-fluid service-img"
+                />
+              </div>
+            </div>
+
+            <!-- Hotel Card -->
+            <div class="item">
+              <div class="service-card bg-green rounded-4 p-4 text-center">
+                <h3>Travel Stress-Free</h3>
+                <h2 class="fw-bold mb-4">Airport Transfer!</h2>
+                <a
+                  href="tel:+917982696472"
+                  class="btn btn-warning px-4 py-2 mb-4"
+                  >Call Us Now!</a
+                >
+                <img
+                  src="./img/home4.png"
+                  alt="Airport Transfer"
+                  class="img-fluid service-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section my-5">
+        <div class="container d-flex flex-column align-items-center">
+          <h2
+            class="text-secondary fs-2 fw-semibold text-center mb-3"
+            id="heading"
+          >
+            About Taxi Travels
+          </h2>
+          <p class="text-center w-75">
+            Subhash Travels is a certified and trusted cab service provider in
+            Bihar, offering affordable, safe, and reliable transportation
+            solutions. We prioritize customer satisfaction with professional
+            drivers, clean cabs, and transparent pricing across a wide range of
+            services.
+          </p>
+          <div class="row g-4 mt-3">
+            <div class="col-md-6">
+              <div
+                class="d-flex align-items-center gap-2 shadow-lg p-4 rounded-3"
+              >
+                <img
+                  src="./img/terms-of-use.png"
+                  alt="rupee-icon"
+                  class="img-fluid"
+                />
+                <div class="d-flex flex-column gap-2">
+                  <h2>15+ Years of Experience</h2>
+                  <p>
+                    We have over 15 years of experience in providing exceptional
+                    travel services across Bihar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="d-flex align-items-center gap-2 shadow-lg p-4 rounded-3"
+              >
+                <img
+                  src="./img/electric-car.png"
+                  alt="rupee-icon"
+                  class="img-fluid"
+                />
+                <div class="d-flex flex-column gap-2">
+                  <h2>15+ Years of Experience</h2>
+                  <p>
+                    We have over 15 years of experience in providing exceptional
+                    travel services across Bihar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="d-flex align-items-center gap-2 shadow-lg p-4 rounded-3"
+              >
+                <img
+                  src="./img/review.png"
+                  alt="rupee-icon"
+                  class="img-fluid"
+                />
+                <div class="d-flex flex-column gap-2">
+                  <h2>15+ Years of Experience</h2>
+                  <p>
+                    We have over 15 years of experience in providing exceptional
+                    travel services across Bihar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="d-flex align-items-center gap-2 shadow-lg p-4 rounded-3"
+              >
+                <img src="./img/team.png" alt="rupee-icon" class="img-fluid" />
+                <div class="d-flex flex-column gap-2">
+                  <h2>15+ Years of Experience</h2>
+                  <p>
+                    We have over 15 years of experience in providing exceptional
+                    travel services across Bihar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Buttons -->
+          <div class="contact-buttons mt-3">
+            <a href="tel:+917982696472" class="contact-btn call-btn">
+              <i class="fas fa-phone"></i>
+              Call Us
+            </a>
+            <span class="divider">OR</span>
+            <a
+              href="https://wa.me/917982696472"
+              class="contact-btn whatsapp-btn"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Whatsapp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="testimonial-section py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-2" style="color: #1e3a8a">
+            What Our Happy Customers Say!
+          </h2>
+          <div class="d-flex justify-content-center gap-1 mb-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+          <p class="text-center mb-5">Based on <strong>368 reviews</strong></p>
+
+          <div class="owl-carousel testimonial-carousel owl-theme">
+            <!-- Testimonial 1 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <div class="review-text">
+                  <p>
+                    Booking a cab with Subhash Travels was incredibly easy. The
+                    website is user-friendly, and the entire process was quick
+                    and simple.
+                  </p>
+                </div>
+                <div class="reviewer-info">
+                  <img
+                    src="./img/test1.jpg"
+                    alt="Shashi T."
+                    class="reviewer-img"
+                  />
+                  <div class="reviewer-details">
+                    <h5>Shashi T.</h5>
+                    <p>Rajendra Nagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <div class="review-text">
+                  <p>
+                    Subhash Travels is always on time! I've used their service
+                    multiple times, and they never disappoint. Punctuality at
+                    its best!
+                  </p>
+                </div>
+                <div class="reviewer-info">
+                  <img
+                    src="./img/test1.jpg"
+                    alt="Jashmine"
+                    class="reviewer-img"
+                  />
+                  <div class="reviewer-details">
+                    <h5>Jashmine</h5>
+                    <p>Muzaffarpur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <div class="review-text">
+                  <p>
+                    Great experience with Subhash Travels! Even with last-minute
+                    bookings, they never cancel. Reliable and trustworthy cab
+                    service.
+                  </p>
+                </div>
+                <div class="reviewer-info">
+                  <img src="./img/test1.jpg" alt="Sanju" class="reviewer-img" />
+                  <div class="reviewer-details">
+                    <h5>Sanju</h5>
+                    <p>Patna</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-warning mb-4">Taxi Muzaffarpur</h3>
+            <p class="mb-4">
+              Your trusted travel partner in Bihar, providing safe and reliable
+              cab services 24/7.
+            </p>
+            <div class="social-links">
+              <a href="#" class="me-3"
+                ><i class="fab fa-facebook text-warning"></i
+              ></a>
+              <a href="#" class="me-3"
+                ><i class="fab fa-twitter text-warning"></i
+              ></a>
+              <a href="#" class="me-3"
+                ><i class="fab fa-instagram text-warning"></i
+              ></a>
+              <a href="#" class="me-3"
+                ><i class="fab fa-whatsapp text-warning"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.php">About Us</a></li>
+              <li><a href="/services.php">Services</a></li>
+              <li><a href="/contact.php">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Our Services</h5>
+            <ul class="footer-links">
+              <li><a href="#">Local Taxi Service</a></li>
+              <li><a href="#">Outstation Trips</a></li>
+              <li><a href="#">Airport Transfer</a></li>
+              <li><a href="#">Corporate Car Rental</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Contact Info</h5>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone text-warning me-2"></i>
+                <a href="tel:+917982696472">+91 7982696472</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope text-warning me-2"></i>
+                <a href="mailto:subhashtravels01@gmail.com"
+                  >subhashtravels01@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-location-dot text-warning me-2"></i>
+                <span>Patna / Darbhanga / Madhubani</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-5 pt-4 border-top border-secondary">
+          <p class="mb-0">&copy; 2024 Taxi Muzaffarpur. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Place js -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- js -->
+    <script src="/index.js"></script>
+  </body>
+</html>
