@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Travel Agency</title>
+    <title>One Way Cabs - Taxi Service</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -13,19 +13,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Add these before closing </head> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/style.css" />
@@ -38,13 +25,13 @@
           <div class="col-md-8">
             <div class="d-flex flex-wrap gap-4">
               <!-- <div class="d-flex align-items-center gap-2">
-                <i class="fas fa-phone text-white"></i>
-                <a
-                  href="tel:+91-7633940407"
-                  class="text-white text-decoration-none"
-                  >+91-7633940407</a
-                >
-              </div> -->
+                  <i class="fas fa-phone text-white"></i>
+                  <a
+                    href="tel:+91-7633940407"
+                    class="text-white text-decoration-none"
+                    >+91-7633940407</a
+                  >
+                </div> -->
               <div class="d-flex align-items-center gap-2">
                 <i class="fas fa-envelope text-white"></i>
                 <a
@@ -135,11 +122,21 @@
                 Taxi Service
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">One way Cabs</a></li>
-                <li><a class="dropdown-item" href="#">Outstation Cabs</a></li>
+                <li>
+                  <a class="dropdown-item" href="/oneway-cabs.html"
+                    >One way Cabs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/outstation-cabs.html"
+                    >Outstation Cabs</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Local Cabs</a>
+                  <a class="dropdown-item" href="/local-cabs.html"
+                    >Local Cabs</a
+                  >
                 </li>
               </ul>
             </li>
@@ -154,7 +151,6 @@
       </div>
     </nav>
 
-    <!-- Main Section -->
     <main>
       <!-- Breadcrumb Section -->
       <section class="breadcrumb-section bg-warning-subtle py-4">
@@ -170,246 +166,207 @@
                 class="breadcrumb-item active fw-semibold"
                 aria-current="page"
               >
-                Contact Us
+                One Way Cabs
               </li>
             </ol>
           </nav>
-          <h1 class="mt-2 mb-0 fw-bold" style="color: #1e3a8a">Contact Us</h1>
+          <h1 class="mt-2 mb-0 fw-bold" style="color: #1e3a8a">One Way Cabs</h1>
         </div>
       </section>
 
-      <!-- Service Timeline Section -->
-      <section class="service-timeline py-5">
+      <!-- One Way Service Intro -->
+      <section class="service-intro py-5">
         <div class="container">
-          <h2 class="text-center fw-bold mb-5" style="color: #1e3a8a">
-            Our Services
-          </h2>
-
-          <div class="row timeline-container">
-            <!-- Taxi Service -->
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="timeline-item d-flex flex-column align-items-center">
-                <div class="timeline-icon">
-                  <i class="fas fa-taxi"></i>
-                </div>
-                <div class="timeline-content text-center">
-                  <h3>Taxi Service</h3>
-                  <p>
-                    Reliable, safe, and affordable taxis for all your travel
-                    needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Airport Transfer -->
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="timeline-item d-flex flex-column align-items-center">
-                <div class="timeline-icon">
-                  <i class="fas fa-plane"></i>
-                </div>
-                <div class="timeline-content text-center">
-                  <h3>Airport Transfer</h3>
-                  <p>
-                    On-time pickups and drop-offs for a hassle-free airport
-                    experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Special Occasions -->
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="timeline-item d-flex flex-column align-items-center">
-                <div class="timeline-icon">
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="timeline-content text-center">
-                  <h3>Cab Booking for Occasions</h3>
-                  <p>
-                    Book luxury cabs for weddings, events, and special occasions
-                    easily.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Booking Steps Section -->
-      <section class="booking-steps py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center fw-bold mb-5" style="color: #1e3a8a">
-            Book Your Cab in Simple Steps
-          </h2>
-
-          <div class="row g-4">
-            <!-- Phone Call -->
-            <div class="col-lg-4">
-              <div class="step-card text-center">
-                <div class="step-icon mb-4">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <h3 class="mb-3">Phone Call</h3>
-                <p class="text-secondary mb-3">
-                  Call us directly at +91-7982696472 to book your cab quickly
-                  and easily.
-                </p>
-                <a href="tel:+91-7982696472" class="btn btn-warning px-4">
-                  <i class="fas fa-phone me-2"></i>Call Now
-                </a>
-              </div>
-            </div>
-
-            <!-- WhatsApp -->
-            <div class="col-lg-4">
-              <div class="step-card text-center">
-                <div class="step-icon mb-4">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-                <h3 class="mb-3">WhatsApp Us</h3>
-                <p class="text-secondary mb-3">
-                  Send us a message on WhatsApp to book instantly.
-                </p>
-                <a
-                  href="https://wa.me/917982696472"
-                  class="btn btn-success px-4"
-                >
-                  <i class="fab fa-whatsapp me-2"></i>WhatsApp
-                </a>
-              </div>
-            </div>
-
-            <!-- Website -->
-            <div class="col-lg-4">
-              <div class="step-card text-center">
-                <div class="step-icon mb-4">
-                  <i class="fas fa-globe"></i>
-                </div>
-                <h3 class="mb-3">Website</h3>
-                <p class="text-secondary mb-3">
-                  Visit our website for easy online cab booking anytime.
-                </p>
-                <a href="#" class="btn btn-warning px-4">
-                  <i class="fas fa-arrow-right me-2"></i>Book Online
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section py-5">
-        <div class="container">
-          <div class="row g-4">
-            <!-- Contact Form -->
+          <div class="row align-items-center g-4">
             <div class="col-lg-6">
-              <div class="contact-form-card p-4 rounded-4 shadow-lg">
-                <h3 class="mb-4 fw-bold" style="color: #1e3a8a">
-                  Send us a Message
-                </h3>
+              <div class="intro-content">
+                <h2 class="fw-bold mb-4" style="color: #1e3a8a">
+                  Best One Way Taxi Service in Bihar
+                </h2>
+                <p class="lead text-secondary mb-4">
+                  Travel seamlessly with our one-way cab service. Pay only for
+                  your destination, not for the return journey.
+                </p>
+                <div class="feature-list">
+                  <div class="feature-item mb-3">
+                    <i class="fas fa-check-circle text-warning me-2"></i>
+                    <span>No return fare charges</span>
+                  </div>
+                  <div class="feature-item mb-3">
+                    <i class="fas fa-check-circle text-warning me-2"></i>
+                    <span>Professional drivers</span>
+                  </div>
+                  <div class="feature-item mb-3">
+                    <i class="fas fa-check-circle text-warning me-2"></i>
+                    <span>Clean and sanitized vehicles</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="fas fa-check-circle text-warning me-2"></i>
+                    <span>24/7 customer support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="booking-form-card p-4 rounded-4 shadow-lg">
+                <h3 class="text-center mb-4">Book Your One Way Cab</h3>
                 <form>
                   <div class="mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required
-                    />
+                    <div class="input-group">
+                      <span class="input-group-text bg-warning">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Pickup Location"
+                        required
+                      />
+                    </div>
                   </div>
                   <div class="mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email Address"
-                      required
-                    />
+                    <div class="input-group">
+                      <span class="input-group-text bg-warning">
+                        <i class="fas fa-map-marker"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Drop Location"
+                        required
+                      />
+                    </div>
                   </div>
                   <div class="mb-3">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Phone Number"
-                      required
-                    />
+                    <div class="input-group">
+                      <span class="input-group-text bg-warning">
+                        <i class="fas fa-calendar"></i>
+                      </span>
+                      <input type="date" class="form-control" required />
+                    </div>
                   </div>
                   <div class="mb-3">
-                    <select class="form-select">
-                      <option selected>Select Service</option>
-                      <option>Local Taxi</option>
-                      <option>Airport Transfer</option>
-                      <option>Outstation Trip</option>
-                    </select>
+                    <div class="input-group">
+                      <span class="input-group-text bg-warning">
+                        <i class="fas fa-clock"></i>
+                      </span>
+                      <input type="time" class="form-control" required />
+                    </div>
                   </div>
-                  <div class="mb-3">
-                    <textarea
-                      class="form-control"
-                      rows="4"
-                      placeholder="Your Message"
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-warning px-4 py-2">
-                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  <button type="submit" class="btn btn-warning w-100 py-2">
+                    <i class="fas fa-car me-2"></i>Book Now
                   </button>
                 </form>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Contact Info & Map -->
-            <div class="col-lg-6">
-              <div class="contact-info-card p-4 rounded-4 shadow-lg mb-4">
-                <h3 class="mb-4 fw-bold" style="color: #1e3a8a">
-                  Contact Information
-                </h3>
-
-                <div class="contact-info-item mb-4">
-                  <i class="fas fa-map-marker-alt text-warning me-2"></i>
-                  <span>Patna / Darbhanga / Madhubani, Bihar</span>
+      <!-- Popular Routes -->
+      <section class="popular-routes py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5" style="color: #1e3a8a">
+            Popular One Way Routes
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="route-card">
+                <div class="route-header">
+                  <i class="fas fa-route"></i>
+                  <h4>Patna to Muzaffarpur</h4>
                 </div>
-
-                <div class="contact-info-item mb-4">
-                  <i class="fas fa-phone text-warning me-2"></i>
-                  <a href="tel:+917982696472">+91 7982696472</a>
-                </div>
-
-                <div class="contact-info-item mb-4">
-                  <i class="fas fa-envelope text-warning me-2"></i>
-                  <a href="mailto:subhashtravels01@gmail.com"
-                    >subhashtravels01@gmail.com</a
-                  >
-                </div>
-
-                <div class="social-links-fancy my-4">
-                  <a href="#" class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="social-icon twitter">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a href="#" class="social-icon whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                </div>
-
-                <!-- Google Map -->
-                <div class="map-container rounded-4 overflow-hidden shadow-lg">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.99409841871!2d85.14304295!3d25.608037449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1740243492559!5m2!1sen!2sin"
-                    width="100%"
-                    height="300"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                  >
-                  </iframe>
+                <div class="route-details">
+                  <p><i class="fas fa-road me-2"></i>Distance: 75 km</p>
+                  <p><i class="fas fa-clock me-2"></i>Duration: 2 hrs</p>
+                  <p>
+                    <i class="fas fa-money-bill me-2"></i>Starting from ₹1500
+                  </p>
+                  <a href="#" class="btn btn-warning w-100">Book Now</a>
                 </div>
               </div>
             </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="route-card">
+                <div class="route-header">
+                  <i class="fas fa-route"></i>
+                  <h4>Patna to Muzaffarpur</h4>
+                </div>
+                <div class="route-details">
+                  <p><i class="fas fa-road me-2"></i>Distance: 75 km</p>
+                  <p><i class="fas fa-clock me-2"></i>Duration: 2 hrs</p>
+                  <p>
+                    <i class="fas fa-money-bill me-2"></i>Starting from ₹1500
+                  </p>
+                  <a href="#" class="btn btn-warning w-100">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="route-card">
+                <div class="route-header">
+                  <i class="fas fa-route"></i>
+                  <h4>Patna to Muzaffarpur</h4>
+                </div>
+                <div class="route-details">
+                  <p><i class="fas fa-road me-2"></i>Distance: 75 km</p>
+                  <p><i class="fas fa-clock me-2"></i>Duration: 2 hrs</p>
+                  <p>
+                    <i class="fas fa-money-bill me-2"></i>Starting from ₹1500
+                  </p>
+                  <a href="#" class="btn btn-warning w-100">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more route cards as needed -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section class="why-choose py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5" style="color: #1e3a8a">
+            Why Choose Our One Way Service
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="benefit-card text-center">
+                <div class="benefit-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <h4>Cost Effective</h4>
+                <p>Pay only for one-way journey</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="benefit-card text-center">
+                <div class="benefit-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <h4>Cost Effective</h4>
+                <p>Pay only for one-way journey</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="benefit-card text-center">
+                <div class="benefit-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <h4>Cost Effective</h4>
+                <p>Pay only for one-way journey</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="benefit-card text-center">
+                <div class="benefit-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <h4>Cost Effective</h4>
+                <p>Pay only for one-way journey</p>
+              </div>
+            </div>
+            <!-- Add more benefit cards -->
           </div>
         </div>
       </section>
