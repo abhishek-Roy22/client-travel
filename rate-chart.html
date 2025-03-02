@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Add these before closing </head> -->
     <link
       rel="stylesheet"
@@ -168,199 +171,207 @@
           <h1 class="mt-2 mb-0 fw-bold" style="color: #1e3a8a">Rate Chart</h1>
         </div>
       </section>
-
       <!-- Rate Chart Section -->
       <section class="rate-chart-section py-5">
         <div class="container">
-          <!-- Local Taxi Rates -->
-          <div class="rate-card mb-5">
-            <div class="rate-header bg-warning text-dark p-3 rounded-top">
-              <h3 class="mb-0 fw-bold">Local Taxi Rates</h3>
+          <!-- Pricing Toggle -->
+          <div class="text-center mb-5">
+            <h2
+              class="fw-bold mb-4"
+              style="color: #1e3a8a"
+              data-aos="fade-down"
+            >
+              Our Transparent Pricing
+            </h2>
+          </div>
+
+          <!-- Pricing Cards Container -->
+          <div class="row g-4" data-aos="fade-up">
+            <!-- Basic Plan -->
+            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+              <div class="pricing-card shadow-lg rounded-4 overflow-hidden">
+                <div class="card-header bg-warning bg-opacity-10 p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h4 class="mb-0 fw-bold">Sedan</h4>
+                      <p class="text-muted mb-0">Perfect for small groups</p>
+                    </div>
+                    <i class="fas fa-car fs-1 text-warning"></i>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <div class="price-tag text-center my-4">
+                    <h3 class="display-6 fw-bold mb-0">₹800</h3>
+                    <p class="text-muted">4 Hours / 40 KM</p>
+                  </div>
+                  <ul class="feature-list list-unstyled">
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      AC Vehicle
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      4 Passengers
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra KM: ₹12/km
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra Hour: ₹100/hr
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:+91-9128949339"
+                    class="btn btn-warning w-100 rounded-pill py-3"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="table-responsive">
-              <table class="table table-striped table-hover mb-0">
-                <thead class="table-light">
-                  <tr>
-                    <th>Vehicle Type</th>
-                    <th>4 Hours / 40 KM</th>
-                    <th>8 Hours / 80 KM</th>
-                    <th>Extra KM</th>
-                    <th>Extra Hour</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i class="fas fa-car text-warning me-2"></i>Sedan</td>
-                    <td>₹800</td>
-                    <td>₹1500</td>
-                    <td>₹12/km</td>
-                    <td>₹100/hr</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-car-side text-warning me-2"></i>SUV
-                    </td>
-                    <td>₹1000</td>
-                    <td>₹2000</td>
-                    <td>₹15/km</td>
-                    <td>₹150/hr</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-van-shuttle text-warning me-2"></i>Innova
-                    </td>
-                    <td>₹1200</td>
-                    <td>₹2500</td>
-                    <td>₹18/km</td>
-                    <td>₹200/hr</td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <!-- Standard Plan -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="pricing-card shadow-lg rounded-4 overflow-hidden border border-warning"
+              >
+                <div class="card-header bg-warning p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h4 class="mb-0 fw-bold">SUV</h4>
+                      <p class="mb-0">Best for families</p>
+                    </div>
+                    <i class="fas fa-car-side fs-1"></i>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <div class="price-tag text-center my-4">
+                    <h3 class="display-6 fw-bold mb-0">₹1000</h3>
+                    <p class="text-muted">4 Hours / 40 KM</p>
+                  </div>
+                  <ul class="feature-list list-unstyled">
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Premium AC Vehicle
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      6 Passengers
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra KM: ₹15/km
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra Hour: ₹150/hr
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:+91-9128949339"
+                    class="btn btn-warning w-100 rounded-pill py-3"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+              <div class="pricing-card shadow-lg rounded-4 overflow-hidden">
+                <div class="card-header bg-warning bg-opacity-10 p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h4 class="mb-0 fw-bold">Innova</h4>
+                      <p class="text-muted mb-0">Luxury travel</p>
+                    </div>
+                    <i class="fas fa-van-shuttle fs-1 text-warning"></i>
+                  </div>
+                </div>
+                <div class="card-body p-4">
+                  <div class="price-tag text-center my-4">
+                    <h3 class="display-6 fw-bold mb-0">₹1200</h3>
+                    <p class="text-muted">4 Hours / 40 KM</p>
+                  </div>
+                  <ul class="feature-list list-unstyled">
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Luxury AC Vehicle
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      7 Passengers
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra KM: ₹18/km
+                    </li>
+                    <li class="mb-3">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      Extra Hour: ₹200/hr
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:+91-9128949339"
+                    class="btn btn-warning w-100 rounded-pill py-3"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Outstation Taxi Rates -->
-          <div class="rate-card mb-5">
-            <div class="rate-header bg-warning text-dark p-3 rounded-top">
-              <h3 class="mb-0 fw-bold">Outstation Taxi Rates</h3>
-            </div>
-            <div class="table-responsive">
-              <table class="table table-striped table-hover mb-0">
-                <thead class="table-light">
-                  <tr>
-                    <th>Vehicle Type</th>
-                    <th>Base Rate (per km)</th>
-                    <th>Min. KM per Day</th>
-                    <th>Driver Allowance</th>
-                    <th>Night Charges</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i class="fas fa-car text-warning me-2"></i>Sedan</td>
-                    <td>₹12/km</td>
-                    <td>250 km</td>
-                    <td>₹300/day</td>
-                    <td>₹250/night</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-car-side text-warning me-2"></i>SUV
-                    </td>
-                    <td>₹15/km</td>
-                    <td>250 km</td>
-                    <td>₹350/day</td>
-                    <td>₹300/night</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-van-shuttle text-warning me-2"></i>Innova
-                    </td>
-                    <td>₹18/km</td>
-                    <td>250 km</td>
-                    <td>₹400/day</td>
-                    <td>₹350/night</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Airport Transfer Rates -->
-          <div class="rate-card">
-            <div class="rate-header bg-warning text-dark p-3 rounded-top">
-              <h3 class="mb-0 fw-bold">Airport Transfer Rates</h3>
-            </div>
-            <div class="table-responsive">
-              <table class="table table-striped table-hover mb-0">
-                <thead class="table-light">
-                  <tr>
-                    <th>Vehicle Type</th>
-                    <th>Pickup to Airport</th>
-                    <th>Airport to Drop</th>
-                    <th>Round Trip</th>
-                    <th>Waiting Charges</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i class="fas fa-car text-warning me-2"></i>Sedan</td>
-                    <td>₹800</td>
-                    <td>₹900</td>
-                    <td>₹1500</td>
-                    <td>₹100/hr</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-car-side text-warning me-2"></i>SUV
-                    </td>
-                    <td>₹1000</td>
-                    <td>₹1100</td>
-                    <td>₹1800</td>
-                    <td>₹150/hr</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="fas fa-van-shuttle text-warning me-2"></i>Innova
-                    </td>
-                    <td>₹1200</td>
-                    <td>₹1300</td>
-                    <td>₹2200</td>
-                    <td>₹200/hr</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Terms and Conditions -->
-          <div class="terms-section mt-5">
-            <h4 class="fw-bold mb-4" style="color: #1e3a8a">
-              Terms & Conditions
-            </h4>
+          <!-- Additional Information -->
+          <div class="additional-info mt-5 pt-5 border-top">
             <div class="row g-4">
-              <div class="col-md-6">
-                <div class="terms-card p-4 rounded-3 h-100">
-                  <h5 class="text-warning mb-3">Inclusions</h5>
+              <div class="col-md-6" data-aos="fade-right">
+                <div class="info-card bg-light p-4 rounded-4">
+                  <h4 class="text-warning mb-4">
+                    <i class="fas fa-info-circle me-2"></i>Important Information
+                  </h4>
                   <ul class="list-unstyled mb-0">
-                    <li>
-                      <i class="fas fa-check-circle text-success me-2"></i>GST
-                      Included in all rates
+                    <li class="mb-3">
+                      <i class="fas fa-clock text-warning me-2"></i>
+                      Minimum booking duration: 4 hours
                     </li>
-                    <li>
-                      <i class="fas fa-check-circle text-success me-2"></i>Toll
-                      tax included
+                    <li class="mb-3">
+                      <i class="fas fa-map-marker-alt text-warning me-2"></i>
+                      Service available in all major cities
                     </li>
-                    <li>
-                      <i class="fas fa-check-circle text-success me-2"></i
-                      >Professional drivers
-                    </li>
-                    <li>
-                      <i class="fas fa-check-circle text-success me-2"></i>Clean
-                      and sanitized vehicles
+                    <li class="mb-3">
+                      <i class="fas fa-calendar text-warning me-2"></i>
+                      Advance booking recommended
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="terms-card p-4 rounded-3 h-100">
-                  <h5 class="text-warning mb-3">Exclusions</h5>
+              <div class="col-md-6" data-aos="fade-left">
+                <div class="info-card bg-light p-4 rounded-4">
+                  <h4 class="text-warning mb-4">
+                    <i class="fas fa-tag me-2"></i>Special Offers
+                  </h4>
                   <ul class="list-unstyled mb-0">
-                    <li>
-                      <i class="fas fa-times-circle text-danger me-2"></i
-                      >Parking charges extra
+                    <li class="mb-3">
+                      <i class="fas fa-percent text-warning me-2"></i>
+                      10% off on weekly bookings
                     </li>
-                    <li>
-                      <i class="fas fa-times-circle text-danger me-2"></i
-                      >Interstate taxes extra
+                    <li class="mb-3">
+                      <i class="fas fa-gift text-warning me-2"></i>
+                      Special corporate rates available
                     </li>
-                    <li>
-                      <i class="fas fa-times-circle text-danger me-2"></i
-                      >Additional stops charges applicable
-                    </li>
-                    <li>
-                      <i class="fas fa-times-circle text-danger me-2"></i>Night
-                      charges after 10 PM
+                    <li class="mb-3">
+                      <i class="fas fa-users text-warning me-2"></i>
+                      Group booking discounts
                     </li>
                   </ul>
                 </div>
@@ -458,6 +469,15 @@
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Aos Animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+      });
+    </script>
 
     <!-- Google Place js -->
     <script

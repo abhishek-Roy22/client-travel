@@ -79,3 +79,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Scroll to Top Functionality
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Show button when user scrolls down 300px
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+};
+
+// Smooth scroll to top when button is clicked
+scrollToTopBtn.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+// Add smooth scrolling to all navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  });
+});
