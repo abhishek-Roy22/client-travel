@@ -85,9 +85,13 @@ li {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ... existing styles ... */
 #heading {
   font-family: 'Rye', serif;
+}
+
+#logo {
+  width: 100px;
+  height: 60px;
 }
 
 .booking-container {
