@@ -159,204 +159,467 @@
 
     <!-- Main Section -->
     <main>
-      <!-- Form Section -->
-      <section class="mb-4 bg-warning-subtle">
+      <!-- Hero Section with Quick Booking Form -->
+      <section class="hero-section position-relative">
         <div class="container py-5">
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-                class="booking-container shadow"
-              >
-                <h5 class="text-center fw-bold mb-4">
-                  Bihar's First Licensed Taxi Aggregator by Govt. of Bihar.
-                </h5>
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+              <h1 class="display-4 fw-bold mb-3">
+                Reliable Taxi Services<br />
+                Across <span class="text-warning">Bihar & Beyond</span>
+              </h1>
+              <p class="lead mb-4">
+                Taxi Muzaffarpur Private Limited offers premium cab services
+                from Muzaffarpur, Darbhanga, Patna and all of Bihar to anywhere
+                in India.
+              </p>
+              <div class="d-flex gap-3">
+                <a href="#booking" class="btn btn-warning btn-lg"
+                  >Book a Cab Now</a
+                >
+                <a href="#services" class="btn btn-outline-dark btn-lg"
+                  >Explore Services</a
+                >
+              </div>
+            </div>
 
-                <!-- Tabs for Selection -->
-                <div class="tab-container mb-4">
-                  <button onclick="selectTab(this)" class="tab-btn active">
-                    <i class="fas fa-taxi"></i> Local
-                  </button>
-                  <button onclick="selectTab(this)" class="tab-btn">
-                    <i class="fas fa-bus"></i> Outstation
-                  </button>
-                  <button onclick="selectTab(this)" class="tab-btn">
-                    <i class="fa-solid fa-plane"></i> Airport
-                  </button>
-                </div>
-
-                <!-- Booking Form -->
-                <div class="booking-form">
-                  <p class="text-center mb-4" id="form-title">
-                    Book <strong>Local</strong> City/Town rides all over Bihar.
-                  </p>
-
-                  <!-- Booking Form -->
-
-                  <!-- Add name and phone fields -->
-                  <div class="d-flex align-items-center gap-2">
+            <!-- Right Form -->
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="booking-form-card bg-white p-4 rounded-4 shadow">
+                <h3 class="text-center mb-4">Quick Booking</h3>
+                <form id="bookingForm">
+                  <!-- Pickup Location -->
+                  <div class="mb-3">
+                    <label class="form-label">Pickup Location</label>
                     <div class="input-group">
-                      <span class="input-group-text bg-transparent">
-                        <i class="fas fa-user text-warning"></i>
+                      <span class="input-group-text bg-light border-0">
+                        <i class="fas fa-map-marker-alt text-warning"></i>
                       </span>
                       <input
                         type="text"
-                        class="form-control"
-                        placeholder="Enter your name"
+                        class="form-control border-0 bg-light"
+                        placeholder="Enter pickup location"
                         required
                       />
                     </div>
+                  </div>
 
+                  <!-- Destination -->
+                  <div class="mb-3">
+                    <label class="form-label">Destination</label>
                     <div class="input-group">
-                      <span class="input-group-text bg-transparent">
-                        <i class="fas fa-phone text-warning"></i>
+                      <span class="input-group-text bg-light border-0">
+                        <i class="fas fa-map-marker text-warning"></i>
                       </span>
                       <input
-                        type="tel"
-                        class="form-control"
-                        placeholder="Enter your phone number"
-                        pattern="[0-9]{10}"
+                        type="text"
+                        class="form-control border-0 bg-light"
+                        placeholder="Enter destination"
                         required
                       />
                     </div>
                   </div>
 
-                  <div class="location-inputs">
-                    <div
-                      class="d-flex align-items-center justify-content-between"
-                    >
+                  <!-- Date and Time -->
+                  <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label class="form-label">Pickup Date</label>
                       <div class="input-group">
-                        <span class="input-group-text bg-transparent">
-                          <i class="fas fa-circle text-success"></i>
-                          <span class="text-secondary fw-semibold ms-2"
-                            >Start Location</span
-                          >
+                        <span class="input-group-text bg-light border-0">
+                          <i class="fas fa-calendar text-warning"></i>
                         </span>
-                        <gmpx-api-loader
-                          key="AIzaSyD5WMUaysjka4p_lpzPrV2uBv-g-JI_bYo"
-                          solution-channel="GMP_GE_placepicker_v2"
-                        >
-                        </gmpx-api-loader>
-                        <div id="place-picker-box">
-                          <div id="place-picker-container">
-                            <gmpx-place-picker
-                              placeholder="Start Location (Business or Place)"
-                            ></gmpx-place-picker>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="input-group">
-                        <span class="input-group-text bg-transparent">
-                          <i class="fas fa-circle text-danger"></i>
-                          <span class="text-secondary fw-semibold ms-2"
-                            >Drop Location</span
-                          >
-                        </span>
-                        <gmpx-api-loader
-                          key="AIzaSyD5WMUaysjka4p_lpzPrV2uBv-g-JI_bYo"
-                          solution-channel="GMP_GE_placepicker_v2"
-                        >
-                        </gmpx-api-loader>
-                        <div id="place-picker-box">
-                          <div id="place-picker-container">
-                            <gmpx-place-picker
-                              placeholder="Enter Destination (Business or Place)"
-                            ></gmpx-place-picker>
-                          </div>
-                        </div>
+                        <input
+                          type="date"
+                          class="form-control border-0 bg-light"
+                          required
+                        />
                       </div>
                     </div>
-                    <div class="input-group mb-4">
-                      <!-- <span class="input-group-text bg-transparent">
-                        <i class="far fa-clock"></i>
-                      </span> -->
-                      <input
-                        type="date"
-                        class="form-control px-2"
-                        value="Now"
-                        required
-                      />
+                    <div class="col-md-6">
+                      <label class="form-label">Pickup Time</label>
+                      <div class="input-group">
+                        <span class="input-group-text bg-light border-0">
+                          <i class="fas fa-clock text-warning"></i>
+                        </span>
+                        <input
+                          type="time"
+                          class="form-control border-0 bg-light"
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
 
-                  <button class="btn btn-warning w-100 py-2 fw-bold">
-                    Continue →
+                  <!-- Service Type -->
+                  <div class="mb-4">
+                    <label class="form-label">Service Type</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light border-0">
+                        <i class="fas fa-taxi text-warning"></i>
+                      </span>
+                      <select class="form-select border-0 bg-light" required>
+                        <option value="">Select Service Type</option>
+                        <option value="local">Local Trip</option>
+                        <option value="outstation">Outstation</option>
+                        <option value="airport">Airport Transfer</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button
+                    type="submit"
+                    class="btn btn-warning w-100 py-3 fw-bold"
+                  >
+                    Check Availability
                   </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="taxi-info-container">
-                <div class="taxi-info-content p-4 bg-white shadow rounded">
-                  <h3 class="text-warning mb-4">Welcome to TaxiMuzaffarpur</h3>
-
-                  <div class="features-list">
-                    <div class="feature-item mb-3">
-                      <i class="fas fa-taxi text-warning me-2"></i>
-                      <span>24/7 Cab Service Available</span>
-                    </div>
-
-                    <div class="feature-item mb-3">
-                      <i class="fas fa-route text-warning me-2"></i>
-                      <span>Local & Outstation Trips</span>
-                    </div>
-
-                    <div class="feature-item mb-3">
-                      <i class="fas fa-plane text-warning me-2"></i>
-                      <span>Airport Pickup & Drop</span>
-                    </div>
-
-                    <div class="feature-item mb-3">
-                      <i class="fas fa-building text-warning me-2"></i>
-                      <span>Corporate Car Rental</span>
-                    </div>
-                  </div>
-
-                  <div class="taxi-highlights mt-4">
-                    <h5 class="mb-3">Why Choose Us?</h5>
-                    <ul class="list-unstyled">
-                      <li class="mb-2">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        Professional & Experienced Drivers
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        Clean & Well-Maintained Vehicles
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        Competitive & Transparent Pricing
-                      </li>
-                      <li class="mb-2">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        Safe & Comfortable Journey
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="contact-info mt-4">
-                    <h5 class="mb-3">Book Your Ride Now!</h5>
-                    <div class="d-flex gap-2">
-                      <a href="tel:+91-9128949339" class="btn btn-warning">
-                        <i class="fas fa-phone me-2"></i>Call Us
-                      </a>
-                      <a
-                        href="https://wa.me/9128949339"
-                        class="btn btn-success"
-                      >
-                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Premium Services Section -->
+      <section class="premium-services py-5 bg-dark text-white">
+        <div class="container">
+          <h2 class="text-center mb-2">Our Premium Taxi Services</h2>
+          <p class="text-center text-light mb-5">
+            Discover our comprehensive range of reliable and comfortable
+            transportation solutions throughout Bihar and beyond.
+          </p>
+
+          <div class="row g-4">
+            <!-- Local Taxi -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-box bg-warning h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-shield-alt text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">Local Taxi</h4>
+                <p class="mb-4">
+                  Convenient and reliable local taxi service within Muzaffarpur,
+                  Darbhanga, Patna, and surrounding areas. Perfect for daily or
+                  regular commuting and city exploration.
+                </p>
+                <ul class="service-features mb-4">
+                  <li>
+                    <i class="fas fa-check me-2"></i>24/7 service availability
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Clean and well-maintained
+                    vehicles
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Knowledgeable local drivers
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100">Book Local Taxi</a>
+              </div>
+            </div>
+
+            <!-- Outstation Cab Services -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-box bg-primary h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-map text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">Outstation Cab Services</h4>
+                <p class="mb-4">
+                  Comfortable and reliable outstation taxi services from Bihar
+                  to any destination India. Best for business trips, family
+                  vacations, or pilgrimages.
+                </p>
+                <ul class="service-features mb-4">
+                  <li>
+                    <i class="fas fa-check me-2"></i>Fixed competitive rates
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Experienced driver for long
+                    routes
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Transparent pricing with no
+                    hidden fees
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100">Book Outstation Cab</a>
+              </div>
+            </div>
+
+            <!-- Airport Transfer -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-box bg-success h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-plane text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">Airport Transfer</h4>
+                <p class="mb-4">
+                  Reliable airport pickup and drop-off services to and from
+                  Patna Airport, Darbhanga Airport, and other airports in Bihar.
+                  Never miss your flight again!
+                </p>
+                <ul class="service-features mb-4">
+                  <li><i class="fas fa-check me-2"></i>Flight time tracking</li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Spacious vehicles for
+                    luggage
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>24/7 service availability
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100"
+                  >Book Airport Transfer</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Services Row -->
+          <div class="row g-4 mt-4">
+            <!-- Round Trip Taxi -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-box bg-primary h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-exchange-alt text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">Round Trip Taxi</h4>
+                <p class="mb-4">
+                  Convenient round trip taxi service with the same vehicle and
+                  driver for your entire journey. Perfect for multiple stops.
+                </p>
+                <ul class="service-features mb-4">
+                  <li>
+                    <i class="fas fa-check me-2"></i>Same vehicle throughout
+                    your journey
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Multi-day trip packages
+                    available
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Flexible itinerary options
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100">Book Round Trip</a>
+              </div>
+            </div>
+
+            <!-- One-way Trip Taxi -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-box bg-danger h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-arrow-right text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">One-way Trip Taxi</h4>
+                <p class="mb-4">
+                  Cost-effective one-way taxi service without return fare
+                  charges. Save for those who need transportation to a
+                  destination.
+                </p>
+                <ul class="service-features mb-4">
+                  <li>
+                    <i class="fas fa-check me-2"></i>Pay only for one-way
+                    journey
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>No return fare charges
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Available for all
+                    destinations
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100">Book One-way Trip</a>
+              </div>
+            </div>
+
+            <!-- Corporate Cab Solutions -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-box bg-secondary h-100 p-4 rounded-3">
+                <div class="service-icon mb-4">
+                  <i class="fas fa-briefcase text-white fs-1"></i>
+                </div>
+                <h4 class="mb-3">Corporate Cab Solutions</h4>
+                <p class="mb-4">
+                  Specialized transportation solutions for businesses. Reliable
+                  service for employee transportation, client pickup, and more.
+                </p>
+                <ul class="service-features mb-4">
+                  <li>
+                    <i class="fas fa-check me-2"></i>Corporate billing options
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Regular employee transport
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2"></i>Premium vehicles for
+                    executives
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-dark w-100"
+                  >Book Corporate Service</a
+                >
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+            <!-- Popular Destinations Section -->
+      <section class="destinations-section py-5 bg-dark">
+              <div class="container">
+                <h2 class="text-center text-white mb-2" data-aos="fade-down">Popular Destinations</h2>
+                <p class="text-center text-light mb-5" data-aos="fade-up">
+                  We provide reliable taxi services to and from all major cities and tourist destinations across Bihar and beyond.
+                </p>
+      
+                <div class="row g-4">
+                  <!-- Muzaffarpur Card -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-card bg-warning">
+                      <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Muzaffarpur</h3>
+                        <p class="subtitle">Our Home Base</p>
+                        <p class="description">Explore the city of litchis with our local taxi services. Visit local attractions, markets, and experience the rich culture of Muzaffarpur.</p>
+                        <div class="service-tags">
+                          <span>Local Tours</span>
+                          <span>City Transfers</span>
+                          <span>Shopping Trips</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Muzaffarpur Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Patna Card -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-card bg-primary">
+                      <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Patna</h3>
+                        <p class="subtitle">State Capital</p>
+                        <p class="description">Travel to and from the capital city of Bihar. Explore historical sites, government offices, and the bustling markets of Patna.</p>
+                        <div class="service-tags">
+                          <span>Airport Transfers</span>
+                          <span>Historical Tours</span>
+                          <span>Business Travel</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Patna Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Darbhanga Card -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-card bg-success">
+                      <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Darbhanga</h3>
+                        <p class="subtitle">Cultural Hub</p>
+                        <p class="description">Visit the cultural heart of Mithila region. Explore Darbhanga's rich heritage, temples, and the famous Darbhanga Raj.</p>
+                        <div class="service-tags">
+                          <span>Airport Transfers</span>
+                          <span>Cultural Tours</span>
+                          <span>Family Visits</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Darbhanga Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Additional cards for other cities -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="destination-card bg-info">
+                      <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Gaya</h3>
+                        <p class="subtitle">Spiritual Destination</p>
+                        <p class="description">Travel to one of the most significant pilgrimage sites. Visit Bodh Gaya, Vishnupad Temple, and other spiritual landmarks.</p>
+                        <div class="service-tags">
+                          <span>Pilgrimage Tours</span>
+                          <span>Buddhist Circuit</span>
+                          <span>Temple Visits</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Gaya Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Bhagalpur Card -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="destination-card bg-danger">
+                      <div class="card-icon">
+                        <i class="fas fa-landmark"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Bhagalpur</h3>
+                        <p class="subtitle">Silk City</p>
+                        <p class="description">Visit the famous silk city of Bihar. Explore the Gangetic plains, Vikramshila ruins, and shop for authentic Bhagalpur silk.</p>
+                        <div class="service-tags">
+                          <span>Silk Shopping</span>
+                          <span>Historical Tours</span>
+                          <span>Ganges Tours</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Bhagalpur Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Delhi Card -->
+                  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="destination-card bg-secondary">
+                      <div class="card-icon">
+                        <i class="fas fa-monument"></i>
+                      </div>
+                      <div class="card-content">
+                        <h3>Delhi</h3>
+                        <p class="subtitle">National Capital</p>
+                        <p class="description">Travel comfortably to the national capital from any city in Bihar. Our long-distance service ensures a safe and convenient journey.</p>
+                        <div class="service-tags">
+                          <span>Long Distance</span>
+                          <span>Business Travel</span>
+                          <span>Tourism</span>
+                        </div>
+                        <a href="#" class="btn btn-dark">Book Delhi Taxi</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </section>
+
+            <!-- Custom Tours CTA Section -->
+            <section class="custom-tours-cta py-5" data-aos="fade-up">
+              <div class="container">
+                <div class="cta-wrapper bg-dark text-white p-4 p-md-5 rounded-4">
+                  <div class="row align-items-center">
+                    <div class="col-lg-8">
+                      <h2 class="mb-3">Custom Destination Tours</h2>
+                      <p class="lead mb-2">Planning to visit multiple destinations? We offer customized tour packages across Bihar and beyond. Tell us your itinerary, and we'll design the perfect transportation plan for you.</p>
+                      <div class="d-flex align-items-center mt-3">
+                        <i class="fas fa-coins text-warning me-2"></i>
+                        <p class="mb-0">Special discounts on multi-city bookings</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                      <a href="#" class="btn btn-warning btn-lg px-4">Request Custom Tour</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
       <!-- Features Section -->
       <section class="features py-5">
@@ -401,34 +664,7 @@
         </div>
       </section>
 
-      <!-- Offer Section -->
-      <!-- <section class="offer-section my-2">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-4">
-              <img
-                src="./img/offer1.png"
-                alt="offer_img"
-                class="img-fluid rounded shadow-lg"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="./img/offer2.png"
-                alt="offer_img"
-                class="img-fluid rounded shadow-lg"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="./img/offer3.png"
-                alt="offer_img"
-                class="img-fluid rounded shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section> -->
+    
 
       <!-- Why Section -->
       <section class="why-section my-5">
@@ -604,171 +840,6 @@
         </div>
       </section>
 
-      <!-- Popular Section -->
-      <section class="popular-section my-5">
-        <div class="container d-flex flex-column align-items-center">
-          <h2
-            data-aos="fade-down"
-            class="text-secondary fs-2 fw-semibold text-center mb-3"
-            id="heading"
-          >
-            Our Popular Rental Packages
-          </h2>
-          <div class="row g-4 mt-3">
-            <div data-aos="fade-right" data-aos-delay="100" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/patna.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Patna</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="200" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/bhagalpur.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Bhagalpur</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="300" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/darbhanga.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Darbhanga</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="400" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/deoghar.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Deoghar</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="100" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/madhubani.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Madhubani</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="200" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/muzaffarpur.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Muzaffarpur</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="300" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/nalanda.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Nalanda</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="400" class="col-md-3">
-              <div
-                class="w-100 h-100 rounded-3 overflow-hidden position-relative"
-              >
-                <img
-                  src="/img/rajgir.jpg"
-                  alt="patna-location"
-                  class="img-fluid"
-                />
-                <div
-                  class="position-absolute d-flex align-items-center justify-content-between w-100 p-2 bg-white bg-opacity-50 bottom-0 end-0 text-dark"
-                >
-                  <h5 class="fw-bold">Rajgir</h5>
-                  <p>Starting from ₹2400</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Contact Buttons -->
-          <div class="contact-buttons mt-3">
-            <a href="tel:+917982696472" class="contact-btn call-btn">
-              <i class="fas fa-phone"></i>
-              Call Us
-            </a>
-            <span class="divider">OR</span>
-            <a
-              href="https://wa.me/917982696472"
-              class="contact-btn whatsapp-btn"
-            >
-              <i class="fab fa-whatsapp"></i>
-              Whatsapp Us
-            </a>
-          </div>
-        </div>
-      </section>
 
       <!-- Service Cards Section -->
       <section class="service-cards py-5">
@@ -1037,6 +1108,90 @@
           </div>
         </div>
       </section>
+
+            <!-- FAQ Accordion Section -->
+            <section class="faq-section py-5">
+              <div class="container">
+                <h2 class="text-center mb-2" data-aos="fade-down">Frequently Asked Questions</h2>
+                <p class="text-center text-secondary mb-5" data-aos="fade-up">Find answers to common questions about our taxi services</p>
+      
+                <div class="row justify-content-center">
+                  <div class="col-lg-8" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                      <!-- Question 1 -->
+                      <div class="accordion-item border-0 mb-3">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How can I book a taxi?
+                          </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            You can book a taxi through our website, by calling us at +91-9128949339, or via WhatsApp. We offer 24/7 booking service for your convenience.
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Question 2 -->
+                      <div class="accordion-item border-0 mb-3">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            What are your payment methods?
+                          </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            We accept cash, UPI payments, and online transfers. For corporate clients, we also offer monthly billing options.
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Question 3 -->
+                      <div class="accordion-item border-0 mb-3">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Do you provide outstation services?
+                          </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Yes, we provide outstation services to all major cities in Bihar and beyond. We offer both one-way and round-trip options with experienced drivers.
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Question 4 -->
+                      <div class="accordion-item border-0 mb-3">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            What types of vehicles do you offer?
+                          </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            We offer a wide range of vehicles including hatchbacks, sedans (Dzire, Honda City), and SUVs (Innova, Scorpio). All vehicles are well-maintained and regularly sanitized.
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Question 5 -->
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            Do you provide airport pickup and drop services?
+                          </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Yes, we provide 24/7 airport transfer services to and from Patna Airport and Darbhanga Airport. We track flight timings to ensure timely pickup and drop.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
     </main>
 
     <!-- Footer -->
